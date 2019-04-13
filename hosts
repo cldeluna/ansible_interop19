@@ -1,6 +1,7 @@
 [local]
 localhost ansible_connection=local
 
-[kanren_lg]
-rviews.kanren.net
+[arctic_switches]
+arctic_sw01 ansible_host=10.1.10.100
+weddell-sw02 ansible_host=10.1.10.40
 
