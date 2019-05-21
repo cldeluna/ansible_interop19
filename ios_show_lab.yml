@@ -27,19 +27,9 @@
   tasks:
     - name: Iterate over show command(s)
       ios_command:
-
-
-
-
-
-
-
-
         commands: "{{ item }}"
-
       with_items:
-      - "show version"
-
+        - "show version"
       register: output
 
     - debug: var=output
