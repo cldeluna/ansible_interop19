@@ -21,12 +21,20 @@
 ###############################################################################
 
 - name: Play01 - Execute show commands on Cisco Lab Equipment
-  hosts: arctic_switches
+  hosts: cisco_xe
   connection: network_cli
 
   tasks:
     - name: Iterate over show command(s)
       ios_command:
+
+
+
+
+
+
+
+
         commands: "{{ item }}"
 
       with_items:
